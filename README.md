@@ -16,7 +16,7 @@ This is a folder from my Obsidian vault that will document my progress as I get 
 
 ## Progress Log
 **4-25-2023**
-- 🚧 Worked On
+- 👷‍♂️ Worked On
 	- Arrays & Hashing
 - ✅ Completed / Took Notes On
 	- Two Sum
