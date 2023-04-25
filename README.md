@@ -16,7 +16,7 @@ This is a folder from my Obsidian vault that will document my progress as I get 
 **4-25-2023**
 - 🚧 Worked On
 	- Arrays & Hashing
-- 🏁 Completed / Took Notes On
+- ✅ Completed / Took Notes On
 	- Two Sum and Group Anagrams
 - 🛠️ Created Document On
 	- HashMaps
@@ -24,7 +24,7 @@ This is a folder from my Obsidian vault that will document my progress as I get 
 **4-24-2023**
 - 🚧 Worked On
 	- NeetCode.io's roadmap, specifically Arrays & Hashing
-- 🏁 Completed / Took Notes On
+- ✅ Completed / Took Notes On
 	- Contains Duplicate and Valid Anagram
 - 🛠️ Created Document On
 	- HashSets
