@@ -9,14 +9,6 @@ This is a folder from my Obsidian vault that will document my progress as I get 
 **A**: Currently, I'm working through NeetCode.io's roadmap of learning. The full checklist and order of what I'll be learning can be found on [[🏠 Coding Interviews]]. All of the "tools" and "methods" I learn to solve different problems will be put into the "Tools and Methods" folder. For each subject from NeetCode, I will be creating a section for each problem and documenting my knowledge and ideas related to each one. I think using Obsidian is a perfect method for learning something like this since it's extremely intuitive to create backlinks (links between notes) and see how each idea builds on one another.
 
 ## Progress Log
-**4-24-2023**
-🚧 Worked On
-- NeetCode.io's roadmap, specifically Arrays & Hashing
-🏁 Completed / Took Notes On
-- Contains Duplicate and Valid Anagram
-🛠️ Created Document On
-- HashSets
-
 **4-25-2023**
 🚧 Worked On
 - Arrays & Hashing
@@ -24,3 +16,11 @@ This is a folder from my Obsidian vault that will document my progress as I get 
 - Two Sum and Group Anagrams
 🛠️ Created Document On
 - HashMaps
+
+**4-24-2023**
+🚧 Worked On
+- NeetCode.io's roadmap, specifically Arrays & Hashing
+🏁 Completed / Took Notes On
+- Contains Duplicate and Valid Anagram
+🛠️ Created Document On
+- HashSets
