@@ -25,7 +25,7 @@ This is a folder from my Obsidian vault that will document my progress as I get 
 	- HashMaps
 
 **4-24-2023**
-- 🚧 Worked On
+- 👷‍♂️ Worked On
 	- NeetCode.io's roadmap, specifically Arrays & Hashing
 - ✅ Completed / Took Notes On
 	- Contains Duplicate
