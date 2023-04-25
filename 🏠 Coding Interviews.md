@@ -14,7 +14,7 @@
 7.  Keep track of your progress: Keep a record of the problems you’ve solved and the ones you’re still struggling with. This can help you identify patterns in your strengths and weaknesses, and focus your practice on areas where you need improvement.
 
 ### NeetCode
-- [x] [[Arrays & Hashing]]
+- [ ] [[Arrays & Hashing]]
 - [ ] Stack
 - [ ] Two Pointers
 - [ ] Binary Search
