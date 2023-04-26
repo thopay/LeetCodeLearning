@@ -4,6 +4,7 @@ Home: [[🏠 Coding Interviews]]
 ### General Solution Methods
 - **[[HashSet]]**: A set that doesn't allow duplicates
 - **[[HashMap]]**: A collection that maps keys to values
+- **[[Bucket Sort]]**: A sorting algorithm that divides an array's elements into several "buckets"
 
 ****
 
@@ -187,15 +188,34 @@ Array = [1, 2, 3, 4]
 - Can reduce memory if we use only output and track prefix/postfix within it
 	- Every prefix is going to be stored in output + 1 index (index 0 stores 1)
 	- Every postfix is going to be the product of whatever prefix is stored in the output - 1 index 
+- $O(n)$ time and $O(1)$ memory
 
 **Example**
-|        | 1   | 2   | 3   | 4   |                     |
-| ------ | --- | --- | --- | --- | ------------------- |
-| Output | 1   |     |     |     | Pre = 1             |
-|        | 1   | 1   |     |     | Pre = 2             |
-|        | 1   | 1   | 2   |     | Pre = 6             |
-|        | 1   | 1   | 2   | 6   | Pre = 24 (not used) |
-|        |     |     |     |     |                     |
+|                | 1      | 2      | 3     | 4     |                     |
+| -------------- | ------ | ------ | ----- | ----- | ------------------- |
+| (start -> end) | **1**  |        |       |       | Pre = 1 * 1 = 1             |
+|                | 1      | **1**  |       |       | Pre = 1 * 2 =2             |
+|                | 1      | 1      | **2** |       | Pre = 2 * 3 = 6             |
+|                | 1      | 1      | 2     | **6** | Pre = 6 * 4 = 24 (not used) |
+| (end -> start) | 1      | 1      | 2     | **6** | Post = 1            |
+|                | 1      | 1      | **8** | 6     | Post = 1 * 4 = 4            |
+|                | 1      | **12** | 8     | 6     | Post = 4 * 3 = 12           |
+| Output         | **24** | 12     | 8     | 6     | Post = 12 * 2 = 24           |
+
+**Solution**
+```Python
+def productExceptSelf(nums):
+	res = [1] * (len(nums))
+	prefix = 1
+	for i in range(len(nums)):
+		res[i] = prefix
+		prefix *= num[i]
+	postfix = 1
+	for i in range(len(nums) - 1, -1, -1):
+		res[i] *= postfix
+		postfix *= nums[i]
+	return res
+```
 
 ****
 
