@@ -183,7 +183,7 @@ Array = [1, 2, 3, 4]
 | ------- | ----------- | ----------- | --------- | ----------- |
 | Prefix  | 1           | 2           | 6         | 24          |
 | Postfix | 24          | 24          | 12        | 4           |
-| Output  | 24 (1 * 24) | 12 (1 * 12) | 8 (2 * 4) | 12 (12 * 1) |
+| Output  | 24 (1 * 24) | 12 (1 * 12) | 8 (2 * 4) | 6 (6 * 1) |
 
 - Can reduce memory if we use only output and track prefix/postfix within it
 	- Every prefix is going to be stored in output + 1 index (index 0 stores 1)
