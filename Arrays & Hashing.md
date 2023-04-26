@@ -133,9 +133,49 @@ def groupAnagrams(strs):
 
 ****
 
-### Top K Frequent Elements
+## Top K Frequent Elements
+- Given an integer array and an integer k, return the k most frequent elements (in any order)
+
+### Method 1
+- Create a [[HashMap]] with the keys as the integer and values as the count
+- Then add the map to a **[[MaxHeap]]**, then we can pop off the heap k times (each pop takes $\log n$ time)
+	- The total time is $k\log n$
+
+### Method 2
+- Takes $O(n)$ time and space
+- Use **[[Bucket Sort]]**
+	- For index, map the counts of each value
+	- For values, have a list of which values have a particular count
+- First, create a [[HashMap]] of keys as integers and values as count then put into [[Bucket Sort]]
+- Start at the size of the input array since the number of indexes of the [[Bucket Sort]] is bounded by the size of the input array (if there are 6 elements, the maximum number of particular occurrences is 6)
+- Memory complexity is $O(n)$ since we have a [[HashMap]] and [[Bucket Sort]]
+
+**Solution**
+```Python
+def topKFrequent(nums, k):
+	count = {}
+	freq = [[] for i in range(len(nums) + 1)]
+	for n in nums:
+		count[n] = 1 + count.get(n, 0)
+	for n, c in count.items(): # returns key value pair in dict
+		freq[c].append(n)
+	res = []
+	for i in range(len(freq) - 1, 0, -1):
+		for n in freq[i]:
+			res.append(n)
+			if len(res) == k:
+				return res
+```
+
+****
 
 ### Product of Array Except Self
+- Given an integer array, return an array such that array[i] is equal to the product of all elements in the original array **except** array[i]
+
+### Method 1
+- 
+
+****
 
 ### Valid Sudoku
 
