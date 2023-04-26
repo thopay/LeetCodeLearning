@@ -21,8 +21,11 @@ This is a folder from my Obsidian vault that will document my progress as I get 
 - ✅ Completed / Took Notes On
 	- Two Sum
 	- Group Anagrams
+	- Top K Frequent Elements
+	- Product of Array Except Self
 - 🛠️ Created Document On
 	- HashMaps
+	- Bucket Sort
 
 **4-24-2023**
 - 👷‍♂️ Worked On
