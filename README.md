@@ -3,7 +3,7 @@ This is a folder from my Obsidian vault that will document my progress as I get 
 
 ****
 
-## Q/As
+## Questions and Answers
 **Q**: How come the formatting looks so weird on GitHub?
 
 **A**: This is because I write these notes with Obsidian backlinks and formatting in mind. This means when I link a note (e.g. [[HashSet]]), within my vault, I can easily click it and visit my notes on HashSets, but this doesn't translate perfectly to GitHub since GitHub doesn't know how to link files relative to the repo.
