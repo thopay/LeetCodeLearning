@@ -173,7 +173,29 @@ def topKFrequent(nums, k):
 - Given an integer array, return an array such that array[i] is equal to the product of all elements in the original array **except** array[i]
 
 ### Method 1
-- 
+- Compute prefix and postfix products
+- $O(n)$ time and memory if creating an array for prefix and postfix
+
+**Example**
+Array = [1, 2, 3, 4]
+|         | 1           | 2           | 3         | 4           |
+| ------- | ----------- | ----------- | --------- | ----------- |
+| Prefix  | 1           | 2           | 6         | 24          |
+| Postfix | 24          | 24          | 12        | 4           |
+| Output  | 24 (1 * 24) | 12 (1 * 12) | 8 (2 * 4) | 12 (12 * 1) |
+
+- Can reduce memory if we use only output and track prefix/postfix within it
+	- Every prefix is going to be stored in output + 1 index (index 0 stores 1)
+	- Every postfix is going to be the product of whatever prefix is stored in the output - 1 index 
+
+**Example**
+|        | 1   | 2   | 3   | 4   |                     |
+| ------ | --- | --- | --- | --- | ------------------- |
+| Output | 1   |     |     |     | Pre = 1             |
+|        | 1   | 1   |     |     | Pre = 2             |
+|        | 1   | 1   | 2   |     | Pre = 6             |
+|        | 1   | 1   | 2   | 6   | Pre = 24 (not used) |
+|        |     |     |     |     |                     |
 
 ****
 
