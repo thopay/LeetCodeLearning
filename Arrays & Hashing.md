@@ -243,11 +243,27 @@ def productExceptSelf(nums):
 ```Python
 def isValidSudoku(board):
 	cols = collections.defaultdict(set) # HashMap
-	
+	rows = collections.defaultdict(set)
+	squares = collections.defaultdict(set) # key = (r/3, c/3)
+	for r in range(9):
+		for c in range(9):
+			if board[r][c] == ".":
+				continue
+			if (board[r][c] in rows[r] or 
+				board[r][c] in cols[c] or 
+				board[r][c] in squares[(r // 3, c // 3)]): # Floor division
+				return False
+			cols[c].add(board[r][c])
+			rows[r].add(board[r][c])
+			squares[(r // 3, c // 3)].add(board[r][c])
+	return True
 ```
 
 ****
 
 ### Encode and Decode Strings
+- Design an algorithm to encode a list of strings to a string
+- The encoded string is then sent over the network and is decoded back to the original list of strings
+- Implement encode and decode
 
 ### Longest Consecutive Sequence
