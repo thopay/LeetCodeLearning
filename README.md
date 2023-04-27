@@ -21,6 +21,8 @@ This is a folder from my Obsidian vault that will document my progress as I get 
 - ✅ Completed / Took Notes On
 	- Valid Sudoku
 	- Encode and Decode Strings
+	- Longest Consecutive Sequence
+	- Arrays & Hashing
 - 🛠️ Created Document On
 	- N/A
 
