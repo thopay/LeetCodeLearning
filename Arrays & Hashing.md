@@ -219,7 +219,18 @@ def productExceptSelf(nums):
 
 ****
 
-### Valid Sudoku
+## Valid Sudoku
+- Determine if a 9x9 Sudoku board is valid
+- Requirements:
+	- Each row must contain the digits 1-9 without repetition
+	- Each column must contain the digits 1-9 without repetition
+	- Each of the nine 3x3 sub-boxes of the grid must contain the digits 1-9 without repetition
+	- Only the filled cells need to be validated according to the mentioned rules
+
+### Method 1
+- Iterate through each row using a [[HashSet]] (checks for duplicates)
+- Iterate through each column using another [[HashSet]]
+	- Adding an element and checking dupl
 
 ### Encode and Decode Strings
 
