@@ -261,9 +261,26 @@ def isValidSudoku(board):
 
 ****
 
-### Encode and Decode Strings
+## Encode and Decode Strings
 - Design an algorithm to encode a list of strings to a string
 - The encoded string is then sent over the network and is decoded back to the original list of strings
 - Implement encode and decode
+- Must be stateless, so you can't store an array of word lengths
+
+### Method 1
+- Put length of word and delimiter at the beginning of each string
+	- "neat", "co#de" -> "4#neat5#co#de"
+- $O(n)$ time for encode and decode where $n$ is the total number of characters
+
+```Python
+def encode(strs):
+	res = ""
+	for s in strs:
+		res += str(len(s)) + "#" + s
+	return res
+
+def decode(strs):
+	
+```
 
 ### Longest Consecutive Sequence
