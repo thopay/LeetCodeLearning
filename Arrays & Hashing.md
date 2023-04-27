@@ -230,7 +230,23 @@ def productExceptSelf(nums):
 ### Method 1
 - Iterate through each row using a [[HashSet]] (checks for duplicates)
 - Iterate through each column using another [[HashSet]]
-	- Adding an element and checking dupl
+	- Adding an element and checking duplicates is $O(1)$
+- For every 3x3 grid, we can use a [[HashSet]] and [[HashMap]]
+	- Take the index of the row and column, then divide by 3 (floor result)
+	- (4,4) = (1, 1) which is the index of the middle square
+	- (8, 8) = (2, 2) which is the index of the bottom right square
+	- Key for [[HashMap]] becomes ($\frac{row}{3}$,$\frac{col}{3}$)
+	- Value for [[HashMap]] is a [[HashSet]] checking for duplicates
+- Overall solution is $O(9^2)$ time and $O(9^2)$ memory
+
+**Solution**
+```Python
+def isValidSudoku(board):
+	cols = collections.defaultdict(set) # HashMap
+	
+```
+
+****
 
 ### Encode and Decode Strings
 
