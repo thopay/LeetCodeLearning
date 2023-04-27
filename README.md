@@ -15,6 +15,15 @@ This is a folder from my Obsidian vault that will document my progress as I get 
 ****
 
 ## Progress Log
+**4-27-2023**
+- 👷‍♂️ Worked On
+	- Arrays & Hashing
+- ✅ Completed / Took Notes On
+	- Valid Sudoku
+	- Encode and Decode Strings
+- 🛠️ Created Document On
+	- N/A
+
 **4-25-2023**
 - 👷‍♂️ Worked On
 	- Arrays & Hashing

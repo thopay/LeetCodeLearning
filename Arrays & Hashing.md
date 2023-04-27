@@ -279,8 +279,16 @@ def encode(strs):
 		res += str(len(s)) + "#" + s
 	return res
 
-def decode(strs):
-	
+def decode(s):
+	res, i = [], 0
+	while i < len(s):
+		j = i
+		while s[j] != "#":
+			j += 1
+		length = int(s[i:j]) # Tells how many following chars to read
+		res.append(s[j + 1: j + 1 + length])
+		i = j + 1 + length
+	return res
 ```
 
 ### Longest Consecutive Sequence
