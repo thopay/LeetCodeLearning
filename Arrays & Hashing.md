@@ -291,4 +291,14 @@ def decode(s):
 	return res
 ```
 
-### Longest Consecutive Sequence
+****
+
+## Longest Consecutive Sequence
+- Given an unsorted array of integers, find the length of the longest consecutive sequence of integers
+- Needs to run in $O(n)$ time
+- `[100, 4, 200, 1, 3, 2]` -> `[1, 2, 3, 4]`
+
+### Method 1
+- Check for left neighbors on each number
+- Convert array to a set
+- 
