@@ -301,4 +301,30 @@ def decode(s):
 ### Method 1
 - Check for left neighbors on each number
 - Convert array to a set
-- 
+- Example: 100
+	- Does array contain 99? No, let's get the length of the sequence
+		- Count how many consecutive numbers come after our first number in the set (check if 101 exists)
+	- Ok, so 4, not a start since 3 is in the set
+	- 200? 199 not in set, so start sequence
+		- 201? No, sequence is length 1
+	- 1? No left neighbor, therefore start of sequence
+		- 2? Yes
+		- 3? Yes
+		- 4? Yes
+		- 5? No, sequence is length 4
+- Time is $O(n)$ and memory is $O(n)$
+
+**Solution**
+```Python
+def longestConsecutive(nums):
+	numSet = set(nums)
+	longest = 0
+	for n in nums:
+		# Check if its the start of a sequence
+		if (n - 1) not in numSet:
+			length = 0
+			while (n + length) in numSet:
+				length += 1
+			longest = max(length, longest)
+	return longest
+```
