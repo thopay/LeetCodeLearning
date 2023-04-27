@@ -31,6 +31,7 @@ def containsDuplicate(nums):
 		if n in hashset:
 			return True
 		hashset.add(n)
+	return False
 ```
 
 ****
@@ -58,7 +59,7 @@ def isAnagram(s, t):
 		countS[s[i]] = 1 + countS.get(s[i], 0) # 0 is default value
 		countT[t[i]] = 1 + countT.get(t[i], 0)
 	for c in countS:
-		if countS[c] != countT[c]:
+		if c not in countT or countS[c] != countT[c]:
 			return False
 	return True
 ```
