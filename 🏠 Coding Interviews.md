@@ -26,7 +26,7 @@
 - [ ] Heap / Priority Queue
 - [ ] Graphs
 - [ ] 1-D DP
-- [ ] Intervals
+- [ ] [[Intervals]]
 - [ ] Greedy
 - [ ] Advanced Graphs
 - [ ] 2-D DP
