@@ -68,3 +68,34 @@ class MinStack:
 	def getMin(self) -> int:
 		return self.stack[-1][1]
 ```
+
+****
+
+## Evaluate Reverse Polish Notation (Post-Fix)
+- You are given an array of strings `tokens` that represents an arithmetic expression in post-fix
+- Evaluate the expression and return an integer that represents the value of the expression
+
+### Method 1
+- Create a stack
+- For each token in tokens, if the token is a number append it to the stack, when an expression is detected, pop twice from the stack and perform the operation, pushing the result back onto the stack
+
+```Python
+def evalRPN(tokens):
+	stack = []
+	for token in tokens:
+		if token not in "+-*/":
+			stack.append(int(token))
+		else:
+			b, a = stack.pop(), stack.pop()
+			if token == '+':
+				stack.append(a+b)
+			elif token == '-':
+				stack.append(a-b)
+			elif token == '*':
+				stack.append(a*b)
+			elif token == '/':
+				stack.append(int(a/b))
+	return stack[0]
+```
+
+****
