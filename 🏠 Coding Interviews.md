@@ -15,7 +15,7 @@
 
 ### NeetCode
 - [x] [[Arrays & Hashing]]
-- [ ] Stack
+- [ ] [[Stack]]
 - [ ] Two Pointers
 - [ ] Binary Search
 - [ ] Sliding Window
