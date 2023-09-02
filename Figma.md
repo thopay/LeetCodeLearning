@@ -80,6 +80,8 @@ Either
 1. Is Unique: Implement an algorithm to determine if a string has all unique characters. What if you cannot use additional data structures?
 ![[Pasted image 20230902135758.png]]
 2. Check Permutation: Given two strings, write a method to decide if one is a permutation of the other
+![[Pasted image 20230902142811.png]]
+3. 
 ### **Day 4-5: Linked List**
   - Understand the concept, how it works and its use-cases. Practice 5-7 linked list related problems on LeetCode each day.
 
