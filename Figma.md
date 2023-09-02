@@ -110,3 +110,9 @@ Either
   - Relax. Go through anything that you think needs a revisit. Get a good amount of sleep before interview days.
 
 Remember, understanding the problem and solution is more important than finishing a large number of problems. All the best!
+
+****
+
+### Questions for prep
+1. Will there be some form of whiteboard available?
+2. Is whiteboarding expected?
