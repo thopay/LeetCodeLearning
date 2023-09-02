@@ -41,3 +41,40 @@ Home: [[🏠 Coding Interviews]]
 - Reflect on your day and how the interview went
 - Follow up with your recruiter if you have questions
 - Go treat yourself!
+
+****
+
+# Study Schedule
+
+**Week 1 - Coding Interview prep - Algorithms and Data Structures**
+
+- **Day 1-3: Array and Strings**
+  - Read about and understand these data structures. Ensure you know how to manipulate strings and familiarize yourself with array operations. Solve at least 5-7 LeetCode problems related to these topics each day.
+
+- **Day 4-5: Linked List**
+  - Understand the concept, how it works and its use-cases. Practice 5-7 linked list related problems on LeetCode each day.
+
+- **Day 6: Stack & Queues**
+  - Grasp the concept, working and applications. Attempt 5-7 stack/queue related problems on LeetCode.
+
+- **Day 7: Rest**
+  - Take a break. Rest or revise what you've learned so far.
+
+**Week 2 - Deepen Coding skills and All-around Interview Prep**
+
+- **Day 8-9: Trees and Graphs**
+  - Spend more time on these as they are more complex. Understand their concepts, traversals, etc. Practice 5-7 tree and graph problems on LeetCode each day.
+
+- **Day 10: Dynamic Programming**
+  - Understand the concept of memozation and tabulation. Try out 5-7 dynamic programming problems on LeetCode.
+
+- **Day 11-12: Conceptual understanding and System Design**
+  - Brush up your knowledge on important concepts like OS, DBMS, OOPS. Get a basic understanding of system design. LeetCode does not have these topics so you might have to use other online resources.
+
+- **Day 13: Behavioral Questions and Company Research**
+  - Prepare for the "Tell me about yourself" and "Why should we hire you?" questions. Other behavioral questions could revolve around your understanding and interpretation of team work, handling pressure and failure etc. Research about Figma, their products, achievements, and any recent news.
+
+- **Day 14: Rest**
+  - Relax. Go through anything that you think needs a revisit. Get a good amount of sleep before interview days.
+
+Remember, understanding the problem and solution is more important than finishing a large number of problems. All the best!
