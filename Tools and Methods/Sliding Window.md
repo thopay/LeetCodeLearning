@@ -1,7 +1,7 @@
 Created: 2023-06-11 11:54
 Home: [[🏠 Coding Interviews]]
 
-The Sliding Window pattern is used to perform a required operation on a specific window size of a given array or linked list, such as finding the longest subarray containing all 1s.
+The Sliding Window pattern is used to perform a required operation on a specific window size of a given array or linked list, such as finding the longest subarray containing all 1s. The two pointers usually move in the same direction and will never overtake each other.
 
 ![slidingWindow](https://hackernoon.imgix.net/images/G9YRlqC9joZNTWsi1ul7tRkO6tv1-8i6d3wi0.jpg)
 
