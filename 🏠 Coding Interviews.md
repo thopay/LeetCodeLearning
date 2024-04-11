@@ -1,5 +1,6 @@
 ### Resources
 - [[Behavioral Questions]]
+- [[The Algorithm Design Manual]]
 
 ### General Advice
 1.  Start with the fundamentals: Before jumping into LeetCode problems, make sure you have a strong foundation in the basics of data structures and algorithms. Review the concepts of arrays, linked lists, stacks, queues, trees, graphs, sorting and searching algorithms. This will give you a good framework to tackle more complex problems.
